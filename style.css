@@ -5,10 +5,17 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+body{
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+}
 header{
     width: 100%;
     height: 8vh;
     padding: 0px 80px;
+    background-color: white;
+    box-shadow: 1px 1px 15px 1px rgba(231, 231, 231, 0.767);
+
 }
 .navBar{
     height: 100%;
@@ -21,22 +28,37 @@ header{
     color: black;
     font-size: 24px;
     font-weight: 600;
+    cursor: pointer;
 }
 .navBar .navLink{
     display: flex;
     align-items: center;
-    width: 27%;
+    width: 30%;
     justify-content: space-between;
+}
+.navBar .navLink li{
+    list-style: none;
+}
+.navBar .navLink a{
+    color: #161616;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    transition: all .3s ease;
+}
+.navBar .navLink a:hover{
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 8px;
 }
 .container{
     width: 100%;
     padding: 40px 80px;
-    background-color: white;
-    box-shadow: 1px 1px 15px 1px rgba(231, 231, 231, 0.767);
 }
 .container .hero{
     width: 100%;
-    height: 100%;
+    height: 646px;
     background-color: #161616;
     border-radius: 30px;
     display: flex;
@@ -44,6 +66,7 @@ header{
     justify-content: space-between;
     padding: 0px 100px;
     transition: all .4s ease-in-out;
+    overflow: hidden;
 }
 .container .hero:hover{
     transform: scale(1.1);
@@ -129,16 +152,25 @@ header{
     margin: 10px;
     border: none;
     outline: none;
-    color: black;
     background-color: white;
     border-radius: 10px;
     cursor: pointer;
+}
+.sidebar button a{
+    text-decoration: none;
     font-size: 16px;
     font-weight: 600;
+    color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
 }
 .sidebar #select{
     background-color: #DD0000;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .blog-section{
     width: 80%;
@@ -257,15 +289,59 @@ footer a{
     line-height: 50px;
     font-weight: 500;
 }
+/* ----------------------matches page-------------------------------- */
+.match{
+    padding: 30px;
+    height: 242px;
+    background-color: white;
+    border: 1px solid rgba(224, 224, 224, 0.651);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.match-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+}
+.match-text{
+    text-align: center;
+}
+.match-text h3{
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+.match-img h2{
+    margin: 10px;
+}
+/* -----------------------group pages---------------------------- */
+.group-text h1{
+    margin-bottom: 10px;
+}
+.group-text p{
+    font-size: 16px;
+    line-height: 1.8;
+}
+.group{
+    width: 250px;
+}
 /* ---------------responsive---------------------- */
+/* ===================================================== */
 /* -----tablet device--------- */
 @media only screen and (min-width:688px) and (max-width:992px) {
+
     .container{
         padding: 40px 30px;
     }
     .container .hero{
         padding: 0px 60px;
         height: 398px;
+        overflow-x: hidden;
     }
     .container .hero .hero-text {
         width: 60%;
@@ -312,9 +388,10 @@ footer a{
     }
     .container .hero{
         flex-direction: column;
-        padding: 0px 90px;
+        padding: 0px 30px;
         height: 472px;
         text-align: center;
+        overflow: visible;
     }
     .container .hero .hero-text{
         margin-top: 28px;
@@ -327,10 +404,11 @@ footer a{
     .container .hero .hero-text h1{
         width: 228px;
         height: 66px;
-        font-size: 22px;
+        font-size: 24px;
         line-height: 33px;
         text-align: center;
-        margin-bottom: 8px;
+        margin-bottom: 10px;
+        font-weight: 600;
     }
     .container .hero .hero-text p{
         font-weight: 400;
