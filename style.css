@@ -86,9 +86,6 @@ header{
         background-image: linear-gradient(rgb(155, 76, 54), rgb(255, 171, 138));
     }
 }
-.container .hero:hover{
-    transform: scale(1.1);
-}
 .container .hero .hero-text{
     width: 45%;
     overflow: hidden;
@@ -249,6 +246,10 @@ header{
     display: flex;
     align-items: center;
     margin-right: 40px;
+}
+.blog-section .blog .blog-text .icone .icone-details i{
+    font-size: 20px;
+    color: black;
 }
 /* --------------tablet btn---------------- */
 .Tablet-btn{
