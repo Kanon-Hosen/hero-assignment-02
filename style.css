@@ -65,8 +65,26 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 0px 100px;
-    transition: all .4s ease-in-out;
+    transition: all .6s ease-in-out;
     overflow: hidden;
+    animation: bgAnimation 5s ease-in-out  infinite alternate;
+}
+@keyframes bgAnimation{
+    0%{
+        background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+        transform: scale(1);
+    }
+    40%{
+        background-image: linear-gradient(rgb(149, 188, 255), rgb(63, 62, 112));
+        transform: scale(1.1);
+    }
+    60%{
+        background-image: linear-gradient(rgb(78, 123, 150),rgb(181, 244, 255));
+    }
+
+    100%{
+        background-image: linear-gradient(rgb(155, 76, 54), rgb(255, 171, 138));
+    }
 }
 .container .hero:hover{
     transform: scale(1.1);
@@ -288,6 +306,17 @@ footer a{
     margin: 10px;
     line-height: 50px;
     font-weight: 500;
+}
+.social-icone{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-icone i{
+    color: white;
+    margin: 15px;
+    font-size: 30px;
 }
 /* ----------------------matches page-------------------------------- */
 .match{
