@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* body{
+    background-color: rgb(233, 233, 233);
+} */
+.container{
+    width: 100%;
+    padding: 40px 80px;
+}
+.container .hero{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(31, 31, 31);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+    transition: all .4s ease-in-out;
+}
+.container .hero:hover{
+    transform: scale(1.1);
+}
+.container .hero .hero-text{
+    width: 45%;
+    overflow: hidden;
+}
+.container .hero .hero-text h1{
+    font-size: 55px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.container .hero .hero-text p{
+    color: #7d8d9b;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.container .hero .hero-text button{
+    width: 150px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: rgb(228, 228, 228);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all .4s ease-in-out;
+}
+.container .hero .hero-text button i{
+    color: white;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.container .hero .hero-text button:hover{
+    background-color: rgb(202, 0, 0);
+}
+.container .hero .hero-img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .hero .hero-img img{
+    width: 100%;
+    height: 100%;
+
+}
+/* -----------blog section----------------- */
+ main{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    overflow-x: hidden;
+    padding: 10px 0px;
+}
+.sidebar{
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    margin-right: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar button{
+    width: 160px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border: none;
+    outline: none;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
+.sidebar #select{
+    background-color: red;
+    color: white;
+}
+.blog-section{
+    width: 80%;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.blog-section .blog{
+    height: 350px;
+    background-color: white;
+    border: 1px solid rgba(224, 224, 224, 0.651);
+    border-radius: 10px;
+}
+.blog-section .blog .blog-img{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+.blog-section .blog .blog-img img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.blog-section .blog .blog-text{
+     padding: 15px 20px;
+}
+.blog-section .blog .blog-text button{
+    padding: 6px 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    color: black;
+    background: transparent;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.blog-section .blog .blog-text p{
+    color: rgb(31, 31, 31);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.blog-section .blog .blog-text .icone{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.blog-section .blog .blog-text .icone .icone-details{
+    width: 20%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+/* --------------tablet btn---------------- */
+.Tablet-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 40px 0px;
+    display: none;
+
+}
+.Tablet-btn button{
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background-color: red;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+/* ----------------footer--------------------- */
+footer{
+    margin-top: 60px;
+    width: 100%;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 80px;
+
+}
+footer h1{
+    color: white;
+    font-size: 45px;
+    font-weight: 700;
+}
+footer hr{
+    border: 6px solid gray;
+}
+
